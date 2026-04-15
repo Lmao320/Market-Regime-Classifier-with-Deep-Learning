@@ -1,44 +1,50 @@
 # Market-Regime-Classifier-with-Deep-Learning
 
-SHerramienta de investigación cuantitativa de nivel institucional para la detección y modelado de regímenes de mercado mediante deep learning.
+📄 Quant Research Note
 
-🚀 Descripción
+Sistema cuantitativo basado en deep learning diseñado para identificar y modelar dinámicamente regímenes de mercado en entornos multi-activo.
 
-Este proyecto implementa un sistema de clasificación de regímenes de mercado multi-activo basado en redes neuronales LSTM (Long Short-Term Memory), diseñado para capturar dependencias temporales no lineales en datos financieros.
+⚙️ Componentes del Sistema
 
-El modelo procesa variables clave del mercado como:
+Extracción de features (retornos, volatilidad, correlaciones)
+Preparación de datos secuenciales
+Clustering inicial (KMeans) para generación de etiquetas
+Modelo LSTM para clasificación de regímenes
+Suavizado de probabilidades y visualización interactiva
 
-Retornos logarítmicos
-Volatilidad
-Correlaciones entre activos
+📚 Documentación Completa
 
-transformándolas en distribuciones probabilísticas de regímenes, lo que permite una comprensión estructurada de la evolución del mercado.
-
-⚡ Características Clave
-Arquitectura Deep Learning (LSTM): Captura dinámicas secuenciales y no lineales
-Enfoque Híbrido: Clustering (KMeans) + aprendizaje supervisado con LSTM
-Análisis Multi-Activo: Diseñado para portafolios diversificados
-Modelado Probabilístico: Genera probabilidades de régimen en lugar de etiquetas rígidas
-Dashboard Interactivo: Visualización avanzada con Streamlit y Plotly
-
-🧠 Problema que Resuelve
--Los mercados financieros son sistemas no estacionarios, caracterizados por cambios estructurales, clustering de volatilidad y variaciones en correlaciones.
-Los modelos tradicionales asumen estabilidad.
-Este sistema aborda esa limitación permitiendo:
-
-Identificar estados ocultos del mercado (regímenes)
-Detectar transiciones entre regímenes
-Construir un framework adaptativo basado en datos para la toma de decisiones cuantitativas
+Para una explicación detallada del modelo, arquitectura, intuición cuantitativa y análisis del sistema, revisa la documentación completa en Notion:
 
 🔗 Documentación Completa
 Para una explicación detallada (intuición cuantitativa, arquitectura y aplicaciones):
 👉 Notion - Quant Research Note 👉 **[Ver documentación completa en Notion](https://www.notion.so/Clasificador-de-Reg-menes-de-Mercado-con-Deep-Learning-4567f18e4ca282e19af181a93023686e?source=copy_link)**
 
-▶️ Ejecución
-streamlit run app.py
+📊 Qué hace el modelo
 
-Contexto Cuantitativo
-Este proyecto forma parte de un framework más amplio de sistemas cuantitativos:
-Detección de Regímenes → Selección de Estrategias → Asignación de Portafolio
+Detecta estructuras ocultas en el mercado
+Identifica distintos estados o regímenes
+Modela probabilidades dinámicas de cada régimen
+Visualiza la evolución temporal del mercado
+
+🎯 Enfoque Cuantitativo
+
+Este sistema replica un enfoque utilizado en hedge funds:
+
+Market Data → Feature Engineering → Regime Detection → Probabilistic Modeling → Strategy Adaptation
+
+🧠 Valor del Proyecto
+
+Integra deep learning con finanzas cuantitativas
+Captura dinámicas no lineales del mercado
+Permite anticipar cambios estructurales
+Mejora la toma de decisiones en entornos no estacionarios
+
+🚀 Aplicaciones
+
+Detección de regímenes de mercado
+Sistemas de trading adaptativo
+Gestión de riesgo dinámica
+Optimización de estrategias multi-activo
 
 Proyecto desarrollado como investigación independiente en finanzas cuantitativas y sistemas adaptativos de inversión. SANTIAGO PEÑA DIAZ
